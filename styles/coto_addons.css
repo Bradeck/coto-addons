@@ -27,6 +27,9 @@
  *     IMPORT WINDOW Style
  *
  */
+section.window-content.coto_importer {
+  background-image: url(../assets/book/generic_page_art/page_bg.webp);
+}
 .coto_importer h1 {
   background-image: url(../assets/book/generic_page_art/banner_title.webp);
   background-position-y: 15px;
