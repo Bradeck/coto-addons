@@ -1,0 +1,599 @@
+/**********
+ * @Fonts
+ */
+@font-face {
+  font-family: Fontin;
+  src: url(./fonts/Fontin-Regular.otf);
+}
+@font-face {
+  font-family: FormataProRegular;
+  src: url(./fonts/FormataPro-regular.otf);
+}
+@font-face {
+  font-family: FormataProLight;
+  src: url(./fonts/FormataPro-Light.otf);
+}
+@font-face {
+  font-family: Mael;
+  src: url(./fonts/Mael.ttf);
+}
+@font-face {
+  font-family: UnZialish;
+  src: url(./fonts/UnZialish.ttf);
+}
+
+/**********
+ *
+ *     IMPORT WINDOW Style
+ *
+ */
+.coto_importer h1 {
+  background-image: url(../assets/book/generic_page_art/banner_title.webp);
+  background-position-y: 15px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 150px;
+  margin: auto !important;
+  padding-top: 50px;
+  max-width: 650px;
+  width: 100%;
+  font-family: Mael;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  word-spacing: -0.1ch;
+}
+
+/**********
+ *
+ *     GENERIC STYLES FOR THE JOURNALS
+ *
+ */
+
+/* navigation */
+.sheet.journal-entry.coto nav.pages-list {
+  border: 20px solid transparent;
+  border-image-source: url(../assets/book/generic_page_art/nav_border.webp);
+  border-image-slice: 100;
+  padding: 20px;
+}
+
+/* internal foundry link */
+.sheet.journal-entry.coto .journal-page-content a:is(.content-link, .inline-roll),
+.sheet.journal-entry.coto .journal-page-content span.roll-link a {
+  text-decoration-color: #c00000;
+  font-weight: bolder;
+  padding: 0;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content a.inline-roll,
+.sheet.journal-entry.coto .journal-page-content span.roll-link a {
+  color: #c00000;
+}
+.sheet.journal-entry.coto .journal-page-content a:is(.content-link, .inline-roll) i,
+.sheet.journal-entry.coto .journal-page-content span.roll-link a i {
+  font-weight: bold;
+  color: #c00000;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content a.inline-roll:hover,
+.sheet.journal-entry.coto .journal-page-content a.content-link:hover,
+.sheet.journal-entry.coto .journal-page-content a.editor-edit:hover,
+.sheet.journal-entry.coto .journal-page-content span.roll-link a:hover {
+  text-shadow: 0 0 8px #c00000;
+}
+.sheet.journal-entry.coto .journal-page-content a[data-action="request"] i {
+  font-weight: bold;
+  color: #c00000;
+}
+.sheet.journal-entry.coto .journal-page-content .roll-link a > i.fa-dice-d20,
+.sheet.journal-entry.coto .journal-page-content a.inline-roll > i.fa-dice-d20 {
+  background: url("../assets/ui/d20-red.svg") no-repeat center / contain;
+}
+.sheet.journal-entry.coto .journal-page-content span.spellLing {
+  font-style: italic;
+  font-weight: bolder;
+}
+/* Generic styles */
+.coto .left {
+  float: left;
+  margin-right: 15px;
+}
+.coto .right {
+  float: right;
+  margin-left: 15px;
+}
+.coto .clear-both {
+  clear: both;
+}
+.coto figure.decoration {
+  clear: both;
+  margin: 5px;
+  border: none;
+  padding: none;
+}
+.coto figure.decoration img {
+  margin: auto;
+}
+.coto div.flexrow div {
+  margin: 5px 0;
+}
+.coto p.credit {
+  font-size: 0.7em;
+}
+.coto section.secret {
+  border: 1px solid var(--color-border-dark-5) !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sheet.journal-entry.dnd5e2-journal.coto figure {
+  margin: 15px auto;
+  display: block;
+}
+.sheet.journal-entry.dnd5e2-journal.coto figure.map {
+  width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sheet.journal-entry.dnd5e2-journal.coto figure.map figcaption {
+  font-family: Mael;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 0.2rem;
+  word-spacing: -0.1ch;
+  color: #3d0000;
+}
+.sheet.journal-entry.dnd5e2-journal.coto figure.simple_portrait {
+  max-width: 300px;
+  padding: 10px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content hr {
+  border-top: 1px solid #3d0000;
+  width: 98%;
+  margin: 10px auto;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-entry-content {
+  background-color: #faf4df;
+  background-image: url(../assets/book/generic_page_art/page_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content {
+  font-family: Fontin;
+  font-size: 1em;
+  color: #3d0000;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content li,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p:not(.chapter_main_title, .chapter_disclaimer, .quote, .context) {
+  line-height: 1.5em;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content img {
+  border: none;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-entry-page :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
+  margin-top: 1rem;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-entry-page cite {
+  font-family: Fontin;
+  font-size: 1em;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* Don't display the editable page title */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-header {
+  margin: 0;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-header input[name="name"] {
+  display: none;
+}
+
+/**********
+ *
+ *     TOP LEVEL STYLES
+ *
+ */
+
+/* Chapter cover page */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content article.chapter_cover {
+  width: 80%;
+  margin: auto;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.chapter_nb {
+  font-family: Mael;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  word-spacing: -0.1ch;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.intro_title,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.chapter_main_title {
+  font-family: Mael;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  word-spacing: -0.1ch;
+  margin: 15px 0;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.intro_title {
+  font-size: 2.5em;
+  color: #764f20;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.chapter_disclaimer {
+  width: 75%;
+  margin: auto;
+  font-family: FormataProLight;
+  font-size: 1em;
+  text-align: center;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content figure.break {
+  clear: both;
+  margin: 1rem auto;
+  width: 40%;
+}
+
+/* Chapter cover title */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.cover_red_title {
+  font-family: Mael;
+  font-size: 1.5em;
+  margin-top: 1.5rem;
+  color: #920508;
+  text-align: center;
+}
+
+/* Chapter Title, with image */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content div.chapter_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  margin-bottom: 50px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content div.chapter_title p {
+  background-image: url(../assets/book/generic_page_art/banner_title.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  bottom: -50px;
+  height: 150px;
+  left: 0;
+  margin: auto;
+  max-width: 650px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  font-family: Mael;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  word-spacing: -0.1ch;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content div.chapter_title p span {
+  position: relative;
+  top: 52px;
+}
+
+/* H1 to H4 */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content div.chapter_title_wo_img, /*the DIV don't appear in TOC*/
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h1 {
+  background-image: url(../assets/book/generic_page_art/banner_title.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  height: 150px;
+  left: 0;
+  margin: auto;
+  max-width: 650px;
+  right: 0;
+  width: 100%;
+  font-family: Mael;
+  font-size: 2.5em;
+  font-weight: normal !important;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  word-spacing: -0.1ch;
+  position: relative;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content div.chapter_title_wo_img span,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h1 span {
+  position: relative;
+  top: 52px;
+}
+
+.sheet.journal-entry.dnd5e2-journal.coto .journal-entry-content h2,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-entry-content p.h2 {
+  display: flex;
+  justify-content: center;
+  font-family: Fontin;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #3d0000;
+  padding: 8px 0;
+  margin: 15px auto;
+}
+
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h3 {
+  display: flex;
+  justify-content: center;
+  font-family: Fontin;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-bottom: 1px solid #3d0000;
+  padding-bottom: 8px;
+  margin: auto;
+}
+
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4 {
+  font-family: Fontin;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4.bac::before {
+  content: url(../assets/book/generic_page_art/bullet_background.webp);
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4.env::before {
+  content: url(../assets/book/generic_page_art/bullet_environment.webp);
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4.exp::before {
+  content: url(../assets/book/generic_page_art/bullet_experience.webp);
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4.sce::before {
+  content: url(../assets/book/generic_page_art/bullet_scene.webp);
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4.tre::before {
+  content: url(../assets/book/generic_page_art/bullet_treasure.webp);
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content h4.roo::before {
+  content: url(../assets/book/generic_page_art/bullet_location.webp);
+}
+
+/**********
+ *
+ *     QUOTES
+ *     With big headshot, small cameo, wo images
+ *
+ */
+
+/* Basic without images */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.quote {
+  border: none;
+  padding: 0 5px;
+  margin: 15px auto;
+  font-style: normal;
+  max-width: 300px;
+}
+
+/* Big Mugshot Quote */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.headshot_quote {
+  border: none;
+  padding: 0;
+  margin: 15px auto;
+  margin-bottom: 10px;
+  font-style: normal;
+  width: 50%;
+  width: 300px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.headshot_quote figure.mugshot {
+  width: 300px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.headshot_quote figure.mugshot img {
+  width: 300px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.headshot_quote figure.mugshot figcaption {
+  font-family: Mael;
+  font-size: 1em;
+  color: #231f20;
+  position: relative;
+  letter-spacing: 0.3rem;
+  word-spacing: -0.3ch;
+}
+
+/* Cameo Quote */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.cameo_quote {
+  border: none;
+  padding: 0 5px;
+  margin: 15px auto;
+  margin-bottom: 10px;
+  font-style: normal;
+  min-width: 300px;
+  max-width: 400px;
+  position: relative;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.cameo_quote div.cameo {
+  max-width: 95px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.cameo_quote p.quote,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.cameo_quote p.context {
+  text-align: left;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.cameo_quote figure {
+  background-color: #e2bfa0;
+  width: 85px;
+  max-width: 85px;
+  height: 85px;
+  max-height: 85px;
+  border-radius: 85px;
+  overflow: hidden;
+  position: relative;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content blockquote.cameo_quote figure img {
+  position: relative;
+  max-width: none;
+}
+
+/* Quote text */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.quote {
+  font-family: Fontin;
+  font-style: italic;
+  font-size: 1.4em;
+  color: #a2550a;
+  text-align: center;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content p.context {
+  font-family: Fontin;
+  font-size: 1em;
+  color: #3d0000;
+  text-align: center;
+}
+
+/**********
+ * 
+ *     NPCs & Monters Statblocks
+ *
+ */
+.coto article.npc section.description figure.npc {
+  max-height: 400px;
+  margin: 0 10px 5px 0;
+}
+.coto article.npc section.description figure.npc img {
+  height: 400px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc section.statblock {
+  max-width: 380px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc section.statblock div.stat_bg {
+  background-color: rgba(235, 209, 163, 0.4);
+  padding: 0 10px;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #60412f;
+  margin-bottom: 1rem;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc section.statblock p.type {
+  font-family: Fontin;
+  font-style: italic;
+  font-size: 1em;
+  color: #a2550a;
+  text-align: center;
+  margin-top: 0.1em;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc section.statblock hr {
+  margin: auto;
+  padding: unset;
+  border: unset;
+  border-top: 1px solid #60412f;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc section.statblock p {
+  font-family: Fontin;
+  font-size: 1em;
+  font-weight: normal;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc .abilities_block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc .ability_block {
+  width: 16.66667%;
+  padding: 0;
+  text-align: center;
+}
+
+/**********
+ * 
+ *     NPCs Index
+ *
+ */
+
+.sheet.journal-entry.dnd5e2-journal.coto article.npc p.title,
+.sheet.journal-entry.dnd5e2-journal.coto article.index-npc p.title {
+  font-family: Fontin;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #3d0000;
+  padding: 8px 0;
+  margin: auto;
+  text-align: center;
+}
+.sheet.journal-entry.dnd5e2-journal.coto article.npc section.statblock p.title {
+  font-size: 1.6em;
+  font-weight: normal;
+  margin: 10px 0 0 0;
+  padding: unset;
+  border: unset;
+}
+
+/**********
+ * 
+ *     Tables
+ *
+ */
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table {
+  border: unset;
+  font-weight: bolder;
+  table-layout: auto;
+  max-width: 620px;
+  margin: 20px auto;
+  background: unset;
+  text-align: center;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table.not_bold {
+  font-weight: normal !important;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table.small_table {
+  max-width: 300px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table.large_table {
+  width: 95%;
+  max-width: 95%;
+  margin: 20px 10px;
+  text-align: left;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table tr,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table th,
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table td {
+  background-color: unset;
+  border: unset;
+  padding: 0 5px;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table thead tr {
+  color: #ffffff;
+  background-color: #3d0000;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table tr:nth-child(even) td {
+  background-color: #dbc09c;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table tr:nth-child(odd) td {
+  background-color: #ead9c3;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table tr {
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #3d0000;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table tr:first-child {
+  border-top-color: transparent;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table tr:last-child {
+  border-bottom-color: transparent;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table.large_table td {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3d0000;
+}
+.sheet.journal-entry.dnd5e2-journal.coto .journal-page-content table.large_table td:first-child {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: transparent;
+}

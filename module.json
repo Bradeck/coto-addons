@@ -1,0 +1,102 @@
+{
+  "id": "coto-addons",
+  "title": "CotO Addons",
+  "version": "1.2.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "description": "Small addons for the Crown of the Oathbreaker Foundry-vtt module made by Elderbrain.",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.3",
+          "maximum": "3.9.9",
+          "verified": "3.0.1"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "crown-of-the-oathbreaker",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.0.3",
+          "verified": "2.0.3"
+        }
+      }
+    ]
+  },
+  "esmodules": ["scripts/coto_addons.mjs"],
+  "styles": ["styles/coto_addons.css"],
+  "authors": [
+    {
+      "name": "Bradeck",
+      "discord": "bradeck"
+    }
+  ],
+  "packs": [
+    {
+      "name": "coto-addons-adv",
+      "label": "CotO Addons",
+      "path": "packs/coto-addons",
+      "type": "Adventure",
+      "banner": "modules/coto-addons/assets/ui/coto_addons_adv_comp_banner_01.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "coto-addons-modular-maps",
+      "label": "Modular Maps",
+      "path": "packs/coto-addons-modular-maps",
+      "type": "Scene",
+      "banner": "modules/coto-addons/assets/book/03_onadbyr/onadbyr_02_history.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "coto-addons-lore",
+      "label": "Lore",
+      "path": "packs/coto-addons-lore",
+      "type": "JournalEntry",
+      "banner": "modules/coto-addons/assets/book/03_onadbyr/onadbyr_02_history.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "coto-addons-random-encounters",
+      "label": "Random Encounters",
+      "path": "packs/coto-addons-random-encounters",
+      "type": "RollTable",
+      "banner": "modules/coto-addons/assets/book/02_kingdom_of_aglarion/aglarion_05_end_of_theocracy.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "CotO Addons",
+      "color": "#223200",
+      "sorting": "m",
+      "packs": ["coto-addons-adv", "coto-addons-modular-maps", "coto-addons-lore", "coto-addons-random-encounters"]
+    }
+  ],
+  "url": "https://github.com/Bradeck/coto-addons/tree/coto",
+  "manifest": "https://github.com/Bradeck/coto-addons/releases/download/1.2.3/module.json",
+  "readme": "https://github.com/Bradeck/coto-addons/blob/coto/README.md"
+}
