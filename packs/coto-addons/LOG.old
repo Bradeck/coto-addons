@@ -1,8 +1,5 @@
-2024/03/27-19:54:55.524 5570 Recovering log #130
-2024/03/27-19:54:55.526 5570 Delete type=0 #130
-2024/03/27-19:54:55.526 5570 Delete type=3 #129
-2024/03/27-20:05:10.425 3b08 Level-0 table #134: started
-2024/03/27-20:05:10.425 3b08 Level-0 table #134: 0 bytes OK
-2024/03/27-20:05:10.426 3b08 Delete type=0 #132
-2024/03/27-20:05:10.426 3b08 Manual compaction at level-0 from '!adventures!jCCEZ80vRiGfA95h' @ 72057594037927935 : 1 .. '!adventures!jCCEZ80vRiGfA95h' @ 0 : 0; will stop at (end)
-2024/03/27-20:05:10.426 3b08 Manual compaction at level-1 from '!adventures!jCCEZ80vRiGfA95h' @ 72057594037927935 : 1 .. '!adventures!jCCEZ80vRiGfA95h' @ 0 : 0; will stop at (end)
+2024/03/27-21:39:20.222 502c Log #137: 0 ops saved to Table #138 OK
+2024/03/27-21:39:20.222 502c Archiving E:\Foundry Dev\Data\Data\modules\coto-addons\packs\coto-addons/000137.log: OK
+2024/03/27-21:39:20.223 502c Table #126: 1 entries OK
+2024/03/27-21:39:20.224 502c Archiving E:\Foundry Dev\Data\Data\modules\coto-addons\packs\coto-addons/MANIFEST-000135: OK
+2024/03/27-21:39:20.225 502c **** Repaired leveldb E:\Foundry Dev\Data\Data\modules\coto-addons\packs\coto-addons; recovered 1 files; 385143 bytes. Some data may have been lost. ****
