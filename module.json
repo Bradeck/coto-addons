@@ -1,7 +1,7 @@
 {
   "id": "coto-addons",
   "title": "CotO Addons",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "compatibility": {
     "minimum": "11",
     "verified": "11.315"
