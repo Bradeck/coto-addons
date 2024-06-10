@@ -1,7 +1,2 @@
-2024/04/08-15:35:57.153 d4420 Recovering log #115
-2024/04/08-15:35:57.154 d4420 Delete type=0 #115
-2024/04/08-15:35:57.155 d4420 Delete type=3 #114
-2024/04/08-15:36:46.356 d4998 Level-0 table #119: started
-2024/04/08-15:36:46.356 d4998 Level-0 table #119: 0 bytes OK
-2024/04/08-15:36:46.357 d4998 Delete type=0 #117
-2024/04/08-15:36:46.357 d4998 Manual compaction at level-0 from '!folders!cVmWz3rBLWBkbais' @ 72057594037927935 : 1 .. '!scenes.walls!wEN5uDilYE0rFRIS.hOgPLc5lE8D4YJs7' @ 0 : 0; will stop at (end)
+2024/06/10-22:24:29.850 98a8 Table #97: 1389 entries OK
+2024/06/10-22:24:29.851 98a8 **** Repaired leveldb E:\Foundry App\Data\Data\modules\coto-addons\packs\coto-addons-modular-maps; recovered 1 files; 219372 bytes. Some data may have been lost. ****
