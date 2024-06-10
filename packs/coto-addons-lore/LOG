@@ -1,5 +1,5 @@
-2024/06/10-22:49:56.088 a6c Recovering log #67
-2024/06/10-22:49:56.089 a6c Level-0 table #69: started
-2024/06/10-22:49:56.093 a6c Level-0 table #69: 364891 bytes OK
-2024/06/10-22:49:56.094 a6c Delete type=0 #67
-2024/06/10-22:49:56.094 a6c Delete type=3 #66
+2024/06/10-23:04:55.983 4a48 Recovering log #67
+2024/06/10-23:04:55.984 4a48 Level-0 table #69: started
+2024/06/10-23:04:55.989 4a48 Level-0 table #69: 466253 bytes OK
+2024/06/10-23:04:55.991 4a48 Delete type=0 #67
+2024/06/10-23:04:55.991 4a48 Delete type=3 #66
