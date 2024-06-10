@@ -1,1 +1,5 @@
-2024/06/10-22:44:57.266 9ffc Delete type=3 #1
+2024/06/10-22:49:56.088 a6c Recovering log #67
+2024/06/10-22:49:56.089 a6c Level-0 table #69: started
+2024/06/10-22:49:56.093 a6c Level-0 table #69: 364891 bytes OK
+2024/06/10-22:49:56.094 a6c Delete type=0 #67
+2024/06/10-22:49:56.094 a6c Delete type=3 #66
