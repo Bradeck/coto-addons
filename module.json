@@ -4,7 +4,7 @@
   "version": "1.2.4",
   "compatibility": {
     "minimum": "11",
-    "verified": "11.315"
+    "verified": "12"
   },
   "description": "Small addons for the Crown of the Oathbreaker Foundry-vtt module made by Elderbrain.",
   "relationships": {
